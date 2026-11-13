@@ -67,7 +67,7 @@ git push -u origin main
 
 On the new empty repo page, click **uploading an existing file** and drag the files in.
 
-> ⚠️ The `.github` folder starts with a dot, so Mac and Windows **hide it**, and it's easy to miss. Without it, there's no pipeline.
+> The `.github` folder starts with a dot, so Mac and Windows **hide it**, and it's easy to miss. Without it, there's no pipeline.
 > On a Mac, press **Cmd + Shift + .** in Finder to show hidden folders. On Windows, turn on **View → Hidden items**.
 > If it's still missing after uploading, click **Add file → Create new file**, type `.github/workflows/ci.yml` as the name, and paste the contents in.
 
@@ -97,7 +97,7 @@ To fill in the badge at the top of this README, replace `YOUR-USERNAME/YOUR-REPO
 
 This is the best way to see what CI is for.
 
-1. On GitHub, open `rtl/counter.sv` and click the ✏️ pencil icon.
+1. On GitHub, open `rtl/counter.sv` and click the pencil icon.
 2. Change this line:
    ```systemverilog
    count <= count + 1'b1;
