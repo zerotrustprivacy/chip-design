@@ -1,0 +1,21 @@
+# Compiles and runs every C++ program in this repo each time you push code.
+
+name: Build and run
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Compile and run every program
+        run: |
+          for file in $(find . -name "*.cpp" | sort); do
+            echo "=== $file ==="
+            g++ -std=c++17 -Wall -o program "$file"
+            ./program
+            echo
+          done
