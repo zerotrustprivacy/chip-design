@@ -1,6 +1,5 @@
 # FPGA / SystemVerilog CI Starter
 
-![Hardware CI](https://github.com/YOUR-USERNAME/YOUR-REPO/actions/workflows/ci.yml/badge.svg)
 
 A small SystemVerilog design with a CI pipeline that checks it automatically on every push:
 
